@@ -1,0 +1,27 @@
+<div class="jumbotron">
+  <p>Se você precisa de ajuda em alguma causa, este é o lugar certo. Cadastre abaixo as informações para as pessoas entrarem em contato \o/</p>
+</div>
+
+<form name="formJoinUs" ng-submit="submitForm(nome, email, telefone, mensagem)">
+  <fieldset class="input-groupt input-group-lg">
+    <label for="nome">Nome</label>
+    <input ng-model="nome" type="text" id="nome" name="nome" placeholder="nome e sobrenome" class="form-control" placeholer="Nome">
+  </fieldset>
+
+  <fieldset class="input-groupt input-group-lg">
+    <label for="email">Email</label>
+    <input ng-model="email" type="email" id="email" name="email" placeholder="email para entrarem em contato" class="form-control" placeholer="Email">
+  </fieldset>
+
+  <fieldset class="input-groupt input-group-lg">
+    <label for="telefone">Telefone</label>
+    <input ng-model="telefone" type="tel" id="telefone" name="telefone" placeholder="+99 99 9999-9999" class="form-control" placeholer="Telefone">
+  </fieldset>
+
+  <fieldset class="input-groupt input-group-lg">
+    <label for="mensagem">Mensagem</label>
+    <input ng-model="mensagem" type="text" id="mensagem" name="mensagem" placeholder="fale tudo que precisa aqui :)" class="form-control" placeholer="Mensagem">
+  </fieldset>
+
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

@@ -1,0 +1,48 @@
+<div class="jumbotron">
+  <p>Quer ajudar alguém? Aqui é o local certo. Você conhece abaixo um pouco das causas que precisam de ajuda e escolhe quem apoiar :)</p>
+</div>
+
+<h6>Filtrar por:</h6>
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">Crianças</button>
+  <button type="button" class="btn btn-default">Idosos</button>
+</div>
+
+<div class="row marketing">
+  <ul class="list-group">
+    <li ng-show="users.length == 0">
+      <div class="panel panel-primary">
+        <header class="panel-heading">Nome aqui</header>
+
+        <div class="panel-body">
+          <h4>email@gmail.com</h4>
+          <h5>+99 99 9999-9999</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, id expedita commodi. Doloribus ipsum facere, recusandae. Numquam adipisci esse ullam.</p>
+        </div>
+
+        <!-- <footer class="panel-footer">
+          <button class="btn btn-danger" ng-click="removerUser(user.id, $index)">Remover</button>
+          <button class="btn btn-primary" ng-click="editUser(user.id)">Editar</button>
+        </footer> -->
+      </div>
+    </li>
+
+    <li ng-repeat="user in users">
+      <div class="panel panel-primary">
+        <header class="panel-heading">{{ user.nome }}</header>
+
+        <div class="panel-body">
+          <h4>{{ user.email }}</h4>
+          <h5>{{ user.telefone }}</h5>
+          <p>{{ user.mensagem }}</p>
+        </div>
+
+        <footer class="panel-footer">
+          <button class="btn btn-danger" ng-click="removerUser(user.id, $index)">Remover</button>
+          <button class="btn btn-primary" ng-click="editUser(user.id)">Editar</button>
+        </footer>
+      </div>
+    </li>
+  </ul>
+</div>
+
