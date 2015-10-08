@@ -11,7 +11,7 @@ Estamos utilizando [Yeoman angular generator](https://github.com/yeoman/generato
 Primeiro passo:
 
 ```
-git clone git@github.com:projeto-we-care/projeto-we-care.github.io.git
+git clone -b development git@github.com:projeto-we-care/projeto-we-care.github.io.git
 ```
 
 segundo passo:
