@@ -34,7 +34,12 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
+
+  'POST /user/create': "JoinUsController.create",
+  'POST /user/login': "JoinUsController.login",
+  'GET /user/test': "JoinUsController.teste",
+  'GET /user/logout': "JoinUsController.logout"
 
   /***************************************************************************
   *                                                                          *
