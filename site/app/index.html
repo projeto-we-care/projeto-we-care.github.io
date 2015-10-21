@@ -20,7 +20,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
+    <!-- <div class="header">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -45,17 +45,22 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="container">
-      <div ng-view=""></div>
-    </div>
+    <main class="main landing">
+      <div class="container">
+        <div ng-view=""></div>
+      </div>
+    </main>
 
     <div class="footer">
       <div class="container">
-        <p>made with love <span class="glyphicon glyphicon-heart"></span></p>
+        <p>Made with <span class="glyphicon glyphicon-heart"></span> by: <a href="https://twitter.com/pedrowborges" target="_blank">Pedro</a>,  <a href="https://twitter.com/exclama" target="_blank">Renato</a>, <a href="https://twitter.com/thais_bione" target="_blank">Thaís</a> e <a href="https://twitter.com/thulioph_" target="_blank">Thulio</a>.</p>
       </div>
     </div>
+
+    <!-- Twitter button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -91,6 +96,7 @@
         <script src="scripts/controllers/help.js"></script>
         <script src="scripts/services/getdata.js"></script>
         <script src="scripts/services/senddata.js"></script>
+        <script src="scripts/controllers/landing.js"></script>
         <!-- endbuild -->
 </body>
 </html>
