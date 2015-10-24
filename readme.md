@@ -1,6 +1,4 @@
-# We care <3
-
-<!-- [![Build Status](http://img.shields.io/travis/zenorocha/clipboard.js/master.svg?style=flat)](https://travis-ci.org/zenorocha/clipboard.js) -->
+![wecare logo](wecare-readme.jpg "WeCare")
 
 > Somos a ponte entre você e quem precisa :)
 
@@ -45,7 +43,3 @@ A api irá rodar em:
 ```
 http://localhost:1337/
 ```
-
-## Licença
-
-[MIT License](http://thulioph.mit-license.org/) © Thulio Philipe
